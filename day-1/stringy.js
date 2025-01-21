@@ -1,6 +1,12 @@
 // #!/usr/bin/env node
 
 'use strict';
+/*
+I:
+O:
+C:
+E:
+*/
 
 /**
  * IN CLASS EXERCISE: stringy.js
@@ -54,11 +60,22 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+
+/*
+I: given a string input
+O: return a new string that forces uppercase letters
+C:
+E:
+*/
+
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+// initiate a variable with empty string 
+var newString = '';
+// use a method to return string with uppercase letters
+newString = string.toUpperCase();
+// return new variable
+return newString;
     // YOUR CODE ABOVE HERE //
 }
 
