@@ -30,9 +30,23 @@ return string.length;
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+/*
+
+/*
+I: given a string
+O: return a new string that forces lowercase letters
+C:
+E:
+*/
+
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
+   // create variable for new string
+   var newString = '';
+   // use a method to return string with lowercase letters
+   newString = string.toLowerCase();
+   // return new variable
+   return newString;
 
     // YOUR CODE ABOVE HERE //
 }
