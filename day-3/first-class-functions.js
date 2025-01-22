@@ -1,7 +1,12 @@
 // #!/usr/bin/env node
 
 'use strict';
-
+/*
+I:
+O:
+C:
+E:
+*/
 /**
  * IN CLASS EXERCISE: FIRST CLASS FUNCTIONS
  */
@@ -11,6 +16,14 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  */
+
+/*
+I: base string or number for testing
+O: a function that tests whether given value is greater than base value
+C:
+E:
+*/
+
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
