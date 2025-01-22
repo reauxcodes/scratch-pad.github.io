@@ -23,7 +23,9 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
+    // create empty array for return of integers
+    var emptyArr = [];
+    // create a for loop to iterates
     
     
     
