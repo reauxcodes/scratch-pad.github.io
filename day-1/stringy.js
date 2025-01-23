@@ -145,10 +145,22 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+
+/*
+I: two string params
+O: one string concatenated into one
+C:
+E:
+*/
+
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+// create holder variable for new string
+var newString = '';
+// use concat method to merge two parameters
+newString = stringOne.concat(stringTwo);
+// return newString
+return newString;
 
     // YOUR CODE ABOVE HERE //
 }
