@@ -21,9 +21,13 @@
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+    // create empty string for return
+    var newString = '';
+    // use method to split string input
+    // use another method to reverse then join
+    newString = input.split('').reverse().join('');
+    // return new string
+    return newString;
     
     // YOUR CODE GOES ABOVE HERE //
 }
