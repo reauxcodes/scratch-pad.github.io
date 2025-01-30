@@ -94,8 +94,12 @@ return newString;
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
+    // create 
+var lowerCased = string.toLowerCase();
+// convert new string to dashcasee
+var newString = lowerCased.replace(/\s+/g, "-");
+// return newString
+return newString;
 
     // YOUR CODE ABOVE HERE //
 }
@@ -155,13 +159,7 @@ E:
 
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-// create holder variable for new string
-var newString = '';
-// use concat method to merge two parameters
-newString = stringOne.concat(stringTwo);
-// return newString
-return newString;
-
+return stringOne + stringTwo;
     // YOUR CODE ABOVE HERE //
 }
 
