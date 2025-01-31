@@ -51,6 +51,14 @@ function isArray(value) {
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
  */
+
+/*
+I: value
+O: return true if value is an object, false otherwise
+C:
+E:
+*/
+
 function isObject(value) {
     // YOUR CODE BELOW HERE //
     
@@ -69,6 +77,14 @@ function isObject(value) {
  * 
  * TIP: Similar to isObject, but we must return true if the value is an Array.
  */
+
+/*
+I: value
+O: return if value is either an array or an object intended as a collection, false if otherwise
+C:
+E:
+*/
+
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     
@@ -97,10 +113,17 @@ function isCollection(value) {
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
  */ 
+
+/*
+I: value
+O: return the type of value as a string
+C:
+E:
+*/
+
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+    return typeof value;
     
     
     // YOUR CODE ABOVE HERE //

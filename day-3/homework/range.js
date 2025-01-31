@@ -21,12 +21,32 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+
+/*
+I: two integers
+O: return an array containing all integers between the two paramaeters, inclusively; return in reverse order if first integer is greater than second
+C:
+E:
+*/
+
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     // create empty array for return of integers
     var emptyArr = [];
-    // create a for loop to iterates
-    
+    // create an if statement that compares start integer to end 
+    if (start >= end){
+        // create for loop to iterate over integers
+        for (var i = start; i >= end; i++){
+            emptyArr.push(i);
+        } else if (start <= end){
+            // iterate over integers in reverse
+            for (var i = end; i >= start; i--){
+                emptyArr.push(i);
+            }
+        }
+        // return array
+        return emptyArr;
+    }
     
     
     // YOUR CODE GOES ABOVE HERE //
