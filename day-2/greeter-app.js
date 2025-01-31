@@ -33,9 +33,28 @@
  *      the exact case.
  */
 
+/*
+I: function
+O: 
+C: use if, else if, else
+E:
+*/
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
+    // create if else statement
+    if (hour >= 0 && hour <= 11){
+        // print Good Morning!
+        console.log('Good Morning!');
+    } else if (hour >= 12 && hour <= 16){
+        // print Good Afternoon!
+        console.log('Good Afternoon!')
+    } else if (hour >= 17 && hour <= 21){
+        // print Good Evening!
+        console.log('Good Evening!');
+    } else if (hour >= 22 && hour <= 24){
+        // print Good Night!
+        console.log('Good Night!');
+    }
     
     
     
