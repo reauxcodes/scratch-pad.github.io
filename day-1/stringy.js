@@ -118,18 +118,17 @@ return newString;
 
 /*
 I: a string and single character
-O: return tru if string begins with the character, false otherwise
+O: return true if string begins with the character, false otherwise
 C: case insensitive
 E:
 */
 
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-// create holder variable to insensitize the function
-var toLowerCase = string.toLowerCase();
-
-
-    
+// create variable for case insensitive
+var lowerCase = string.toLowerCase();
+// use startsWith method to check first character
+return lowerCase.startsWith(char.toLowerCase());
 
     // YOUR CODE ABOVE HERE //
 }
@@ -146,6 +145,14 @@ var toLowerCase = string.toLowerCase();
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/*
+I:
+O:
+C:
+E:
+*/
+
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
@@ -228,8 +235,6 @@ if (stringOne.length > stringTwo.length){
     // return stringTwo if comparison statement is false
     return stringTwo;
 }
-
-
     // YOUR CODE ABOVE HERE //
 }
 
@@ -250,8 +255,6 @@ E:
 
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-// init variable to hold locael method for comparison
- 
 // create if statement to compare
 if (stringOne < stringTwo){
     return 1;
@@ -271,12 +274,23 @@ if (stringOne < stringTwo){
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+/*
+I: two strings
+O: return 1 if first letter is lower alphabetically than second string's first letter; -1 if opposite; and 0 if theyre equal
+C:
+E:
+*/
+
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
-
+ if (stringOne > stringTwo){
+        return 1;
+    } else if (stringOne < stringTwo){
+        return -1;
+    } else if (stringOne === stringTwo){
+        return 0;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
