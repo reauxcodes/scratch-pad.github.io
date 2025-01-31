@@ -35,7 +35,7 @@
 
 /*
 I: 
-O:
+O: an object that manages contacts
 C:
 E:
 */

@@ -55,16 +55,21 @@ function isArray(value) {
 /*
 I: value
 O: return true if value is an object, false otherwise
-C:
+C: cannot use typeof for null, array, and date
 E:
 */
 
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
+    // return tyep of value to object
+    return typeof value === 'object' &&
+    // exclude null
+        value !== null &&
+    // exclude array
+    !Array.isArray(value) &&
+    // exclude date using instanceof method
+    !(value instanceof Date);
 
-    
-    
     
     // YOUR CODE ABOVE HERE //
 }
@@ -87,7 +92,12 @@ E:
 
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
+    // return true if value is either array or object
+    if (Array.isArray(value) === true && typeof value === 'object' && value !== null){
+        return true;
+    } else {
+        return false;
+    }
     
     
     
