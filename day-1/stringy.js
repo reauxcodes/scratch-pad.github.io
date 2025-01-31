@@ -128,6 +128,7 @@ function beginsWith(string, char) {
 // create variable for case insensitive
 var lowerCase = string.toLowerCase();
 // use startsWith method to check first character
+// method will return true or false
 return lowerCase.startsWith(char.toLowerCase());
 
     // YOUR CODE ABOVE HERE //
@@ -147,15 +148,19 @@ return lowerCase.startsWith(char.toLowerCase());
  */
 
 /*
-I:
-O:
-C:
+I: string and a single character
+O: return true if string ends with the character, false otherwise
+C: function is case insensitive
 E:
 */
 
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+// create variable for case insensitive
+var lowerCase = string.toLowerCase();
+// use endsWith method to check first character
+// method will return true or false
+return lowerCase.endsWith(char.toLowerCase());
 
 
     // YOUR CODE ABOVE HERE //
