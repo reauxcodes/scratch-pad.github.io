@@ -93,11 +93,7 @@ E:
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     // return true if value is either array or object
-    if (Array.isArray(value) === true && typeof value === 'object' && value !== null){
-        return true;
-    } else {
-        return false;
-    }
+    return Array.isArray(value) && (typeof value === 'object' && value !== null);
     
     
     
@@ -133,7 +129,16 @@ E:
 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    // init holder variable string
+// specify different value types
+if (value === null){
+    return 'null';
+} else if (Array.isArray(value)){
+    return 'array'
+} else if (value instanceof Date){
+    return 'date';
+} else {
+    return typeof value;
+}
     
     
     // YOUR CODE ABOVE HERE //
