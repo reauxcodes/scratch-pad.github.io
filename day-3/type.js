@@ -123,7 +123,7 @@ E:
 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    return typeof value;
+    // init holder variable string
     
     
     // YOUR CODE ABOVE HERE //
