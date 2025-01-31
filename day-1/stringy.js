@@ -32,7 +32,6 @@ return string.length;
 }
 
 
-
 /**
  * Given an input String, return a new String forced to lowercase.
  */
@@ -116,8 +115,19 @@ return newString;
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/*
+I: a string and single character
+O: return tru if string begins with the character, false otherwise
+C: case insensitive
+E:
+*/
+
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+// create holder variable to insensitize the function
+var toLowerCase = string.toLowerCase();
+
 
     
 
@@ -173,9 +183,19 @@ return stringOne + stringTwo;
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+
+/*
+I: any number of strings
+O: all of the strings joined together
+C:
+E:
+*/
+
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
+    // return all strings into one
+    return args.join('');
 
 
     // YOUR CODE ABOVE HERE //
