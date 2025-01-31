@@ -1,6 +1,12 @@
 // #!/usr/bin/env node
 
 'use strict';
+/*
+I:
+O:
+C:
+E:
+*/
 
 /**
  * IN CLASS EXERCISE: TYPE
@@ -14,10 +20,19 @@
  * 
  * HINT: There is a method that can help with this.
  */
+
+/*
+I: a value
+O: return true if value is an array, false otherwise
+C:
+E:
+*/
+
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+    // use Array.isArray method to check if value is array or not
+    // method will return true or false
+    return Array.isArray(value);
     
     
     // YOUR CODE ABOVE HERE //
