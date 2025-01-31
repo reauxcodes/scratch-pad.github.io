@@ -93,7 +93,7 @@ E:
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     // return true if value is either array or object
-    return Array.isArray(value) && (typeof value === 'object' && value !== null);
+    
     
     
     
