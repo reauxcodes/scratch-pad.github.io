@@ -240,9 +240,26 @@ if (stringOne.length > stringTwo.length){
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+/*
+I: two strings
+O: return 1 if the first string is higher in alphabetical order; -1 if the second is higher; and 0 if theyre equal
+C:
+E:
+*/
+
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+// init variable to hold locael method for comparison
+ 
+// create if statement to compare
+if (stringOne < stringTwo){
+    return 1;
+} else if (stringOne > stringTwo){
+    return -1;
+} else if (stringOne === stringTwo){
+    return 0;
+}
     // YOUR CODE ABOVE HERE //
 }
 
