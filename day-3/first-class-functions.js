@@ -83,9 +83,24 @@ function createStartsWithFilter(startsWith) {
  * 
  * This function needs to be case insensitive.
  */
+
+/*
+I: single character
+O: function that tests whether given string ends with given character
+C: needs to be case insensitve
+E:
+*/
+
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+     // create a case insensitive
+     var newString = endsWith.toLowerCase();
+     // return a function that tests string
+     return function (string){
+        // use charAt method to utilize index in string
+        // use .length method to access end of string
+         return string.charAt(string.length - 1).toLowerCase() === newString;
+     }
     
     
     // YOUR CODE ABOVE HERE //
