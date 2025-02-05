@@ -92,10 +92,10 @@ E:
 
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    // return true if value is either array or object
-    
-    
-    
+    // check if value is an array & an object
+    return (typeof value === 'object' && value !== null) &&
+    // value.constructor method exposes which type of constructor the object is
+        (Array.isArray(value) || (value.constructor === Object));
     
     // YOUR CODE ABOVE HERE //
 }
