@@ -160,9 +160,13 @@ function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
     // use a for loop to iterate over the array
     for (var i = 0; i < strings.length; i++){
-        
+        if (!test(strings[i])){
+            // return false if function does not pass
+            return false;
+        }
     }
-    
+    // return true if false statement does not pass
+    return true;
     
     // YOUR CODE ABOVE HERE //
 }
