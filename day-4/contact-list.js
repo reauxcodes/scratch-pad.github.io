@@ -66,9 +66,10 @@ function makeContactList() {
        },
        // add a addContact key with functin value that has contact parameter
        addContact: function(contact){
-        // 
-        
-       }
+        // add a contact object to the object list
+        return contacts.push(contact);
+       },
+       // add a findContact key with 
     }
 }
 
