@@ -42,27 +42,15 @@ E:
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-    function makeContactList() {
-        let contacts = [];
-    
+        // return a contact object
         return {
-            length: function () {
-                return contacts.length;
-            },
-            addContact: function (contact) {
-                contacts.push(contact);
-            },
-            findContact: function (fullName) {
-                return contacts.find(contact => contact.fullName === fullName);
-            },
-            removeContact: function (contact) {
-                contacts = contacts.filter(c => c !== contact);
-            },
-            printAllContactNames: function () {
-                return contacts.map(contact => contact.fullName).join('\n');
-            }
-        };
+            id: id,
+            nameFrist: nameFirst,
+            nameLast: nameLast
+        }
     }
+    
+        
 } 
 
 
