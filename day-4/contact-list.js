@@ -42,16 +42,13 @@ E:
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-        // return a contact object
-        return {
-            id: id,
-            nameFrist: nameFirst,
-            nameLast: nameLast
-        }
+    // return an object in the function
+    return {
+        id: id,
+        nameFirst: nameFirst,
+        nameLast: nameLast
     }
-    
-        
-} 
+}
 
 
 
