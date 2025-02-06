@@ -69,7 +69,21 @@ function makeContactList() {
         // add a contact object to the object list
         return contacts.push(contact);
        },
-       // add a findContact key with 
+       // add a findContact key with function value with fullName string
+       findContact: function(fullName){
+        // iterate over the contacts array to find names
+        for (var i = 0; i < contacts.length; i++){
+            // create if statement that returns the contact object if found
+            if (fullName === contacts[i]['nameFirst'] + ' ' + contacts[i]['nameLast']){
+                return contacts[i];
+            }
+        }
+
+       },
+       // add removeContact key
+       removeContact: function(contact){
+
+       },
     }
 }
 
