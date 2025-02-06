@@ -60,7 +60,15 @@ function makeContactList() {
     
     return {
         // we implemented the length api for you //
-       
+       // add length key with function value that returns length of constacts
+       length: function(){
+        return contacts.length;
+       },
+       // add a addContact key with functin value that has contact parameter
+       addContact: function(contact){
+        // 
+        
+       }
     }
 }
 
