@@ -78,13 +78,20 @@ function makeContactList() {
                 return contacts[i];
             }
         }
-
        },
-       // add removeContact key
+       // add removeContact key function value that removes a contact from array
        removeContact: function(contact){
-
+        return contacts.pop(contact);
        },
-    }
+       // add printAllContact key with function
+       printAllContactNames: function(){
+        // return strings of fullNames separated by line-break
+       
+        // init holder variable for strings
+        // var names = '';
+        
+       }
+    };
 }
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
